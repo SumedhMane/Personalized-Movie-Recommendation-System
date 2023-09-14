@@ -1,43 +1,56 @@
-# The-Movie-Cinema
 
-![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
-![Framework](https://img.shields.io/badge/Framework-Flask-red)
-![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
-![API](https://img.shields.io/badge/API-TMDB-fcba03)
+# "Cinematic Serendipity: Personalized Recommendations with a State-of-the-Art Movie Recommendations System"
 
-This application provides all the details of the requested movie such as overview, genre, release date, rating, runtime, top cast, reviews, recommended movies, etc.
 
-The details of the movies(title, genre, runtime, rating, poster, etc) are fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, and using the IMDB id of the movie in the API, I did web scraping to get the reviews given by the user in the IMDB site using `beautifulsoup4` and performed sentiment analysis on those reviews.
 
-## Link to the application
+# Abstract:
 
-Check out the live demo: https://tmc.kishanlal.dev/
+In the age of information and entertainment, users often seek detailed insights about movies before deciding what to watch. This project addresses this need by creating an application that retrieves comprehensive information about movies from the TMDB API and gathers user reviews from IMDb using web scraping. Additionally, sentiment analysis provides an understanding of user sentiments associated with movies.
 
-If you can't find the movie you're searching for through auto-suggestions while typing, there's no need to worry. Simply type the name of the movie and press "enter". Even if you make some typos, it should still work fine.
+# Technologies Used:
 
-## 'Invalid Request' Error
+## TMDB API: 
+The TMDB API was employed to collect essential details about movies, including titles, genres, runtime, ratings, posters, and more.
 
-If you're getting invalid request error in your application, kindly go through this issue - https://github.com/kishan0725/The-Movie-Cinema/issues/2
+## Sentiment Analysis: 
+By employing Natural Language Processing techniques, sentiment analysis was performed on the scraped user reviews to determine whether the sentiments were positive, negative, or neutral.
+Methodology:
 
-## How to get the API key?
+## Web Scraping with BeautifulSoup:
 
-Create an account in https://www.themoviedb.org/, click on the `API` link from the left hand sidebar in your account settings and fill all the details to apply for API key. If you are asked for the website URL, just give "NA" if you don't have one. You will see the API key in your `API` sidebar once your request is approved.
+BeautifulSoup was utilized to extract user reviews from these IMDb URLs.
+Sentiment Analysis:
+Preprocessing techniques were applied to clean and prepare the user reviews for analysis.
+Using a sentiment analysis model, each review was classified as positive, negative, or neutral.
 
-## How to run the project?
+# Application Development:
+An interactive application was developed that allowed users to search for movies.
+The application displayed movie details fetched from the TMDB API.
+User reviews and associated sentiment analysis results were presented alongside the movie details.
+Findings:
 
-1. Clone this repository in your local system.
-2. Install all the libraries mentioned in the [requirements.txt](https://github.com/kishan0725/The-Movie-Cinema/blob/master/requirements.txt) file with the command `pip install -r requirements.txt`.
-3. Replace YOUR_API_KEY at line no. 2 of `static/recommend.js` file.
-4. Open your terminal/command prompt from your project directory and run the `main.py` file by executing the command `python main.py`.
-5. Go to your browser and type `http://127.0.0.1:5000/` in the address bar.
-6. Hurray! That's it.
+Comprehensive Movie Details: The application successfully fetched and presented detailed movie information, including title, genre, runtime, rating, and poster.
 
-### Sources of the datasets 
+User Reviews and Sentiment Analysis: The web scraping process retrieved user reviews from IMDb. Sentiment analysis on these reviews revealed the general sentiments associated with the movie.
 
-1. [IMDB 5000 Movie Dataset](https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset)
-2. [The Movies Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset)
-3. [List of movies in 2018](https://en.wikipedia.org/wiki/List_of_American_films_of_2018)
-4. [List of movies in 2019](https://en.wikipedia.org/wiki/List_of_American_films_of_2019)
-5. [List of movies in 2020](https://en.wikipedia.org/wiki/List_of_American_films_of_2020)
+User Engagement: The application provided a user-friendly interface that facilitated easy searching and retrieval of movie details.
 
-Please do ⭐ the repository, if it helped you in anyway.
+![Screenshot (951)](https://github.com/SumedhMane/Netflix-DataAnalysis/assets/112798190/0bd0beff-62b1-4dc0-973e-70161e84bc4c)
+
+
+![Screenshot (946)](https://github.com/SumedhMane/Netflix-DataAnalysis/assets/112798190/714fb7e4-a7be-46c1-890c-f6e05e0dead8)
+
+
+![Screenshot (952)](https://github.com/SumedhMane/Netflix-DataAnalysis/assets/112798190/5894f1f4-06ca-4d8f-9e85-0c47339d994c)
+
+![Screenshot (953)](https://github.com/SumedhMane/Netflix-DataAnalysis/assets/112798190/e085fc7c-6f6e-44d7-89a7-bb6ca80aa275)
+
+![Screenshot (954)](https://github.com/SumedhMane/Netflix-DataAnalysis/assets/112798190/c1a120c3-c844-4bb2-bbfe-39e4ea4a5292)
+
+![Screenshot (955)](https://github.com/SumedhMane/Netflix-DataAnalysis/assets/112798190/6287b36a-1b0a-4584-926b-e02f91a51d86)
+
+![Screenshot (950)](https://github.com/SumedhMane/Netflix-DataAnalysis/assets/112798190/0cd74012-d346-47e1-b995-01d83411ebd7)
+
+
+
+
